@@ -1,19 +1,16 @@
 body {
     margin:0;
-    
     font-family: 'Open Sans', sans-serif;
-
-        
     background: linear-gradient(180deg, rgba(255,248,255,0) 82.08%, rgba(227,255,248,0.38) 100%);
-
     min-height: 100vh;
 
 }
 
 .page {
     width: 1000px;
-    margin: 0 auto;
-    padding-top: 65px;
+    margin: 65px auto 0;
+    
+    
 
 }
 
@@ -29,6 +26,7 @@ nav {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    list-style: none;
     
     
     gap:48px;
@@ -94,8 +92,6 @@ main {
    grid-template-columns: 1fr 1fr;
    gap: 102px; */
 
-
-
 } 
 
 section p {
@@ -118,16 +114,11 @@ button {
     border-radius: 4px;
     background-color: #69B99D;
     cursor: pointer;
-
-
 }
 
 button:hover {
   background-color: #56ad8f; 
 } 
-
-
-
 
 footer {
     font-size: 14px;
@@ -139,6 +130,7 @@ footer {
 footer a {
 
     font-weight: bold;
+    padding-bottom: 30px;
 
 }
 
