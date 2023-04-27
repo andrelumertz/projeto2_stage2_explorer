@@ -19,6 +19,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin-bottom:55px;
+
+    animation-name: topdown;
+    animation-duration: 700ms;
     
 }
 
@@ -92,6 +95,10 @@ main {
    grid-template-columns: 1fr 1fr;
    gap: 102px; */
 
+    animation: bottomtop 700ms 350ms reverse backwards;
+    
+
+
 } 
 
 section p {
@@ -138,4 +145,30 @@ footer a {
     position:fixed;
     bottom: 0;
     right: 0;
+}
+
+@keyframes topdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bottomtop {
+
+    100% {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+    
+    0% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
 }
